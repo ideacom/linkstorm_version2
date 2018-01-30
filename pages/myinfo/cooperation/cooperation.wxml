@@ -1,0 +1,15 @@
+<!--pages/myinfo/cooperation/cooperation.wxml-->
+<!--NameSpace-coop-->
+<view class='coop-container'>
+  <view class='co-co-formtitle'>
+    <text>期待我们的每一次合作</text>
+    <text>开始大空间快捷快递健身卡后端</text>
+  </view>
+  <view class='co-co-formview'>
+    <image src='../images/cooperation_blue.png'></image>
+    <input placeholder='贵姓' placeholder-class='placeholder'></input>
+    <input placeholder='您的联系方式' placeholder-class='placeholder'></input>
+    <textarea show-confirm-bar='false' placeholder='大致内容' placeholder-class='textarea-placeholder'></textarea>
+    <button>提交</button>
+  </view>
+</view>

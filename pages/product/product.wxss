@@ -1,0 +1,248 @@
+@import "../public/shareTemplate/shareTemplate.wxss";
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/* pages/deatail/detail.wxss */
+.detail-container{
+  display: flex;
+  flex-direction: column;
+}
+  /* .de-co-share{
+    align-self: flex-end;
+    width:60rpx;
+    height:120rpx;
+    background:#fff;
+    line-height:50rpx;
+    position: absolute;
+    margin-top:105.5%;
+    z-index: 2; 
+  }
+    .de-co-share text{
+      color:#333;
+      font-size: 27rpx;
+    } */
+  
+  .de-co-DispalyHidden{
+    width:100%;
+    height:280rpx;
+    background-image: url('http://ideacom.cn/public/wxsrc/gangcai/images/in-peijian-head.jpg');
+    background-color: #FFF;
+    background-repeat: no-repeat;
+  }
+    /* .de-ci-companyName{
+      width:60%;
+      height:60rpx;
+      left:50%;
+      margin-left:-30%;
+      margin-top:22%;
+      text-align: center;
+      position: absolute;
+    }
+      .de-ci-companyName text{
+        font-size: 32rpx;
+        color:#fff;
+        letter-spacing: 5rpx;
+      } */
+    .di-ci-headerbuttom{
+      width:100%;
+      height:inherit;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: flex-end;
+      /*背景图遮罩***偷懒*/
+      background: rgba(0,0,100,0.3);
+    }
+    .di-he-header{
+      width:75%;
+      height:60rpx;
+      border:1px solid #ECECEC;
+      border-radius: 30rpx;
+      line-height:60rpx;
+      padding: 0 5%;
+      margin-bottom: 3%; 
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+      .di-he-buttom{
+        font-size:27rpx;
+        color:#fff;
+        letter-spacing: 3rpx;
+      }
+        .di-he-arrow{
+          width:20rpx;
+          height:20rpx;
+          transform: rotate(-90deg);
+        }
+          .rotate180{
+            transform: rotate(90deg)
+          }
+    .de-di-dropDownBox{
+        align-self: center;
+        width:100%;
+        position: relative;
+        z-index: 2; 
+    }
+      .de-dr-displayNone{
+        height:600rpx;
+        background: #FFFFFF;
+      }
+        
+        .de-dr-displayNone view{
+          width: 100%;
+          height:100rpx;
+          font-size: 27rpx;
+          text-align: center;
+          margin:0 auto;
+        }
+          .de-dr-displayNone view text{
+            font-size: 28rpx;
+            text-align: center;
+            line-height: 100rpx;
+            margin:0 auto;
+        }
+        .de-dr-displayNone view .de-di-line{
+          background: rgba(100,100,100,0.1);
+          width:90%;
+          height:3rpx;
+        }
+      .de-dr-blackScreen{
+        width:100%;
+        height:310rpx;
+        background: rgba(100,100,100,0.6);
+        opacity: 0.75;
+        z-index: 2;
+      }
+  /*下半部分*/
+  .de-co-particulars{
+    width: 100%;
+  }
+    /*规格小标题*/
+    .de-pa-standard{
+      width:94%;
+      height:40rpx;
+      background:#E3EFF3;
+      line-height: 40rpx;
+      padding: 1% 3%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content:flex-start;
+    }
+    /*规格小标题内部容器*/
+    .de-pa-standard > view{
+      width: 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+    .de-pa-standard view:last-child{
+      width: 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+    }
+    .de-pa-standard view text{
+      font-size: 27rpx;
+      color: #838383;
+      text-align: center;
+    }
+  /*scroll-view滚动吸附标题，暂未设置吸附效果*/
+  .de-pa-specialSteel{
+      width:100%;
+      height:82rpx;
+      background:#f5f9fa;
+  }
+    .de-pa-specialSteel text{
+      font-size: 27rpx;
+      font-weight: 600;
+      line-height: 80rpx;
+      margin-left:3%;
+    }
+  /*scroll-view循环列表条目，多层嵌套flex*/
+  .de-pa-category{
+    display: flex;
+    flex-direction: column;
+  }
+    .de-pa-category scroll-view{
+      width:100%;
+      height:760rpx;
+    }
+    /*s-v总容器，二分法双列布局*/
+    .de-ca-list1{
+      width: 94%;
+      height: 130rpx;
+      font-size: 27rpx;
+      padding: 0 3% 0 3%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content:flex-start;
+      border-bottom: 1rpx solid rgba(100,100,100,0.1);
+    }
+      /*s-v容器条目最后一个不需要divider分割线*/
+      .de-ca-list1:last-child{
+        border: none;
+      }
+    /*s-v左侧容器*/
+    .de-ca-list1 .de-li-left_column{
+      width: 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+    /*s-v右侧容器*/
+    .de-ca-list1 .de-li-right_column{
+      width: 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: center;
+     }
+      .de-ca-list1 .de-li-right_column text{
+        font-size: 28rpx;
+      }
+      /*s-v左侧容器左侧数据列*/
+      .de-li-arguments1-1{
+        color:#333;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+        .de-li-arguments1-1 text{
+          color: #333;
+          text-align: center;
+        }
+      /*s-v右侧容器右侧数据列*/
+      .de-li-arguments1-2{
+        color:#d7d7d7;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+        .de-li-arguments1-2 text{
+          color: #333;
+          text-align: center;
+        }
+      /*s-v左侧容器内容总控*/
+      .de-li-arguments1-1 text+text,.de-li-arguments1-2 text+text{
+        color: #838383;
+      }
+      /*右侧容器内容控制*/
+      .de-li-way1{
+        font-size: 32rpx;
+        color:orangered;
+      }
+      /*已注释废弃的item divider*/
+      /*.de-li-boderbuttom{
+        width:96%;
+        height:3rpx;
+        margin:0 auto;
+        background: #d7d7d7;
+        margin-top:5%;
+      }*/
+      

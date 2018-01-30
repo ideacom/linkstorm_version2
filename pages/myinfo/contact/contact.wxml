@@ -1,0 +1,25 @@
+<!--pages/myinfo/contact/contact.wxml-->
+<!--NameSpace-contact-->
+<view class='contact-container'>
+  <view class='co-co-header'>
+    <image src='{{headerImg}}'></image>
+    <text>联系支持</text>
+    <text>针对购买、询价、售后与合作等问题，通过电话或聊天服务获得支持、安排详谈或进行预约。</text>
+  </view>
+  <view class='co-co-body'>
+    <text>我们随时提供帮助</text>
+    <view class='co-bo-columnview'>
+      <view class='co-co-column' hover-class='co-co-hover'>
+        <image src='../images/phone3.png'></image>
+        <text>电话联系</text>
+      </view>
+      <view class='co-co-column' hover-class='co-co-hover'>
+        <image src='../images/online2.png'></image>
+        <text>在线客服</text>
+      </view>
+    </view>
+    <view class='co-bo-bottom'>
+      <text>在线与专家聊天或让我们立即给您致电。您还可以预约一个时间，让我们在您方便时给您致电。请回答几个问题，我们将为您推荐解决方案。</text>
+    </view>
+  </view>
+</view>

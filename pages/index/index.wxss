@@ -1,0 +1,270 @@
+/* pages/index/index.wxss */
+
+#container {
+  width: 100%;
+  background: #ececec;
+}
+.in-co-body{
+  width: inherit;
+  height: 625rpx;
+  position: relative;
+  background: #FFFFFF;
+}
+/*轮播图*/
+
+swiper {
+  height: 480rpx;
+  z-index: 1;
+}
+
+.silder-image {
+  width: 100%;
+  height: 480rpx;
+}
+
+/*中间商家地址菜单栏*/
+
+.body {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  z-index: 2;
+}
+
+.makeContactDisplay {
+  width: 85%;
+  height: 170rpx;
+  margin: 2% auto;
+  padding: 0 4%;
+  border-radius: 10rpx;
+  background: #fff;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.makeContactDisplay image {
+  width: 47rpx;
+  height: 47rpx;
+  padding: 20rpx;
+  border: 5rpx solid #25a1fa;
+  border-radius: 65rpx;
+  margin-right: 1%;
+}
+
+.mcd-content-view1 text {
+  color: #2c2c2c;
+  font-size: 36rpx;
+  font-weight: 700;
+  flex: 1 0 auto;
+}
+
+.mcd-divider {
+  width: 110%;
+  margin: 2% 0 5% 0;
+  border-top: 1rpx solid #ececec;
+}
+
+.mcd-content-view2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.mcd-content-view2 text {
+  color: #2c2c2c;
+  font-size: 28rpx;
+  flex: 1 0 auto;
+}
+
+.mcd-content-view2 image {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0;
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  margin-right: 1%;
+}
+
+/*tag底部功能区*/
+
+#bottom {
+  width: 100%;
+  background: #fff;
+  padding-top: 5%;
+}
+/**
+*单条新闻栏目/滚动新闻
+.scrollNews {
+  width: 93%;
+  height: 60rpx;
+  margin: 0 auto 5%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(50, 50, 50, 0.1);
+}
+
+.bo-sc-column1 {
+  padding: 0 0 0 2%;
+}
+
+.bo-sc-column1 text {
+  color: #505050;
+  font-size: 30rpx;
+}
+
+.bo-sc-column2 {
+  padding: 0 2% 0 0;
+}
+
+.bo-sc-column2 text {
+  color: #505050;
+  font-size: 30rpx;
+}
+
+.bo-sc-column3 image {
+  width: 120rpx;
+  height: 100rpx;
+  background: gray;
+}
+*/
+.tableView {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#tableViewTop {
+  margin-bottom: 2%;
+}
+
+.tag {
+  flex: 1 0 auto;
+  margin: 1%;
+  text-align: center;
+}
+
+.tag image {
+  width: 65rpx;
+  height: 65rpx;
+  border-radius: 65rpx;
+  display: block;
+  padding: 20rpx;
+  margin: 0 auto;
+}
+
+.tag text {
+  color: #707070;
+  font-size: 26rpx;
+}
+
+#tag1  image {
+  background: #25a1fa;
+}
+
+#tag2  image {
+  background: #25a1fa;
+}
+
+#tag3  image {
+  background: #25a1fa;
+}
+
+/**
+* fixed share btn
+*/
+@import "../public/shareTemplate/shareTemplate.wxss";
+
+.in-bo-news{
+  width: 90%;
+  margin: 5% 0 0 0;
+  padding: 0 5%;
+}
+/**
+* Title m-column method1,easily but inefficiency
+.in-ne-title{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  column-count: 3;
+  column-rule: 1rpx solid rgba(50, 50, 50, 0.1); 
+  text-align: center;
+}
+*/
+/*
+* Title m-column method2==>flex
+*/
+.in-ne-title{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.in-ti-news_divider{
+  width: 1rpx;
+  height: 45rpx;
+  border-left: 1rpx solid rgba(50, 50, 50, 0.1);
+}
+.in-ne-title .in-ti-left,.in-ti-right{
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 28rpx;
+}
+.in-ne-title #selected{
+  border-bottom: 1rpx solid #25a1fa;
+}
+.in-ne-box{
+  width: inherit;
+}
+swiper{
+  width: 100%;
+  height: 700rpx;
+}
+.in-bo-item{
+  width: inherit;
+  height: 100rpx;
+  display: flex;
+  flex-flow: row  nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.in-bo-item text:first-child{
+  font-size: 28rpx;
+}
+.in-bo-item > text + text{
+  color: #25a1fa;
+  font-size: 28rpx;
+}
+.in-ne-box .in-bo-item_divider{
+  width: inherit;
+  height: 10rpx;
+  border-top: 1rpx solid rgba(50, 50, 50, 0.1);
+}
+.in-bo-more{
+  width: inherit;
+  height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.in-special_text{
+  color: #505050;
+}
+.in-co-footer{
+  width: 100%;
+  text-align: center;
+  margin-top: -10%;
+}
+.in-co-footer text{
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.3);
+  display: block;
+}

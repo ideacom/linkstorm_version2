@@ -1,0 +1,32 @@
+<!--pages/myinfo/range/range.wxml-->
+<!--NameSpace-range-->
+<view class='range-container'>
+  <swiper circular='true' bindchange='swiperChange' current='{{activeTab}}'>
+    <block wx:for="{{cardViewContent}}">
+      <swiper-item>
+        <view class='ra-co-cardview'>
+          <view class='ra-ca-viewtitle'>
+            <text>{{item.titleText}}</text>
+            <text>{{item.titleTag}}</text>
+          </view>
+          <!--double line-->
+          <!--
+      <view class='ra-co-imgview'>
+      <image src='../images/online2.png'></image>
+      <image src='{{qrcodeImg}}' bindlongtap='previewImg'></image>
+      </view>
+      -->
+          <!--singel line-->
+          <view class='ra-co-imgview'>
+            <image src='{{item.img}}' bindtap='previewImg'></image>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='ra-ca-bottom_tab'>
+    <block wx:for="{{bottomTab}}">
+      <view bindtap='rcbBottomTab' data-index='{{index}}' id="{{activeTab == index ? 'selected' : ''}}">{{item}}</view>
+    </block>
+  </view>
+</view>

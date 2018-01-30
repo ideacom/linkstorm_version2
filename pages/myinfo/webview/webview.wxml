@@ -1,0 +1,18 @@
+<!--pages/myinfo/wxopen/wxopen.wxml-->
+<!--NameSpace-wxopen-->
+<view class='wxopen-container'>
+  <view class='wx-co-cardview'>
+    <view class='wx-ca-viewtitle'>
+      <text>获取更多服务</text>
+      <text>请移步丰泰集团PC端官方网站</text>
+    </view>
+    <view class='wx-co-imgview'>
+      <image src='../images/logo2.png'></image>
+      <image src='{{image}}'></image>
+    </view>
+    <view class='wx-ca-viewtitle'>
+      <text>丰泰集团·上海</text>
+    </view>
+  </view>
+</view>
+

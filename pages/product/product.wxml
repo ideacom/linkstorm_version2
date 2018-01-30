@@ -1,0 +1,111 @@
+<!--pages/deatail/detail.wxml-->
+<view class="detail-container">
+  <!-- <button class="de-co-share" open-type="share">
+    <text>分享</text>
+  </button>  -->
+  <view class="de-co-DispalyHidden">
+    <!-- <view class="de-ci-companyName">
+      <text>李超宝宝有限公司</text>
+    </view> -->
+    <view class="di-ci-headerbuttom" catchtap='DisplayHidden'>
+      <view class="di-he-header">
+        <view class="di-he-buttom">{{allUnitprice}}</view>
+        <image class="di-he-arrow {{rotate? 'rotate180':''}}" src="/images/arrow.png"></image>
+      </view>
+    </view>
+    <view class="de-di-dropDownBox">
+      <scroll-view class="de-dr-displayNone" hidden="{{displayhidden}}" scroll-y="true">
+        <view class="de-di-all" catchtap="all">
+          <text style="color:{{color1}};">{{allTheGoods}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="b_steel">
+          <text style="color:{{color2}};">{{steelFlag}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="d_steel">
+          <text style="color:{{color3}};">{{galvanizedPipe}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="j_steel">
+          <text style="color:{{color4}};">{{angleIron}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="p_steel">
+          <text style="color:{{color5}};">{{ordinaryHotRolledPlate}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="h_steel">
+          <text style="color:{{color6}};">{{hShapedSteel}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="jz_steel">
+          <text style="color:{{color7}};">{{buildingRoundSteel}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="b_steels">
+          <text style="color:{{color8}};">{{steelFlag}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="d_steels">
+          <text style="color:{{color9}};">{{galvanizedPipe}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="j_steels">
+          <text style="color:{{color10}};">{{angleIron}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="p_steels">
+          <text style="color:{{color11}};">{{ordinaryHotRolledPlate}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="h_steels">
+          <text style="color:{{color12}};">{{hShapedSteel}}</text>
+          <view class="de-di-line"></view>
+        </view>
+        <view catchtap="jz_steels">
+          <text style="color:{{color13}};">{{buildingRoundSteel}}</text>
+        </view>
+      </scroll-view>
+      <view class="de-dr-blackScreen" hidden="{{display}}"></view>
+    </view>
+  </view>
+  <view class="de-co-particulars">
+    <view class="de-pa-standard">
+      <view>
+        <text>{{theMaterialOfSteel}}</text>
+        <text>{{specificationsOfTheWarehouse}}</text>
+      </view>
+      <view>
+        <text>{{price}}</text>
+      </view>
+    </view>
+    <view class="de-pa-specialSteel">
+      <text>{{hShpaeMetal}}</text>
+    </view>
+    <view class="de-pa-category">
+      <scroll-view scroll-y="true">
+        <view class="de-ca-list1" wx:for="{{steelList}}" wx:for-item="item">
+          <!--左侧列-->
+          <view class='de-li-left_column'>
+            <view class="de-li-arguments1-1">
+              <text>{{item.textture}}</text>
+              <text>{{item.steel}}</text>
+            </view>
+            <view class="de-li-arguments1-2">
+              <text>{{item.specification}}</text>
+              <text>{{item.warehouse}}</text>
+            </view>
+          </view>
+          <!--右侧列-->
+          <view class='de-li-right_column'>
+            <text class="de-li-way1">{{item.way}}</text>
+          </view>
+          <!--<view class="de-li-boderbuttom"></view>-->
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <import src="../public/shareTemplate/shareTemplate.wxml" />
+  <template is="buttom"></template>
+</view>

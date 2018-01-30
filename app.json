@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/station/station",
+    "pages/index/alternateDetil/alternateDetil",
+    "pages/index/peijian/peijian",
+    "pages/product/product",
+    "pages/myinfo/myinfo",
+    "pages/myinfo/contact/contact",
+    "pages/myinfo/cooperation/cooperation",
+    "pages/myinfo/wxopen/wxopen",
+    "pages/myinfo/webview/webview",
+    "pages/myinfo/range/range",
+    "pages/logs/logs",
+    "pages/index/newsDetil/newsDetil"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "丰泰集团",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#2852BF",
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index_blue.png",
+        "selectedIconPath": "images/index_selected_blue.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "iconPath": "images/product_blue.png",
+        "selectedIconPath": "images/product_selected_blue.png",
+        "text": "产品"
+      },
+      {
+        "pagePath": "pages/myinfo/myinfo",
+        "iconPath": "images/myinfo_blue.png",
+        "selectedIconPath": "images/myinfo_selected_blue.png",
+        "text": "企业"
+      }
+    ]
+  }
+}

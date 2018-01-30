@@ -1,0 +1,9 @@
+<!--pages/public/shareTemplate/shareTemplate.wxml-->
+<template name="buttom">
+  <view class='share-btn-container'>
+    <button class="sh-co-makeshare sh-co-ms2" open-type="share">
+      <!--<image src='/images/share-template-btn.png'></image>-->
+      分享
+    </button>
+  </view>
+</template>

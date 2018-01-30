@@ -1,0 +1,26 @@
+<!--pages/myinfo/myinfo.wxml-->
+<view id='container'>
+  <view id='header'>
+    <view id='headerBgH'></view>
+    <image id='bg' src='{{headerBgImg}}'></image>
+    <image id='logo' src='{{logo}}'></image>
+    <text id='logoText'>{{logoText}}</text>
+  </view>
+  <view id='body'>
+    <view class='items'>
+      <navigator url='contact/contact'><image src='{{itemsImgUrl[0]}}'></image>{{navText[0]}}</navigator>
+    </view>
+    <view class='items'>
+      <navigator url='cooperation/cooperation'><image src='{{itemsImgUrl[1]}}'></image>{{navText[1]}}</navigator>
+    </view>
+    <view class='items'>
+      <navigator url='range/range'><image src='{{itemsImgUrl[2]}}'></image>{{navText[2]}}</navigator>
+    </view>
+    <view class='items'>
+      <navigator url='wxopen/wxopen'><image src='{{itemsImgUrl[3]}}'></image>{{navText[3]}}</navigator>
+    </view>
+    <view class='items'>
+      <navigator url='webview/webview'><image src='{{itemsImgUrl[4]}}'></image>{{navText[4]}}</navigator>
+    </view>
+  </view> 
+</view> 

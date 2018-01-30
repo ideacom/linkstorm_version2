@@ -1,0 +1,104 @@
+<!--NameSpace-index- -->
+<view id='container'>
+  <!--上半部分单独定位区域-->
+  <view class='in-co-body'>
+    <view class='swiper'>
+      <swiper autoplay='true' circular='true' interval='2500'>
+        <block wx:for="{{imgUrl}}">
+          <swiper-item>
+            <image src='{{item}}' class='silder-image' bindtap='imgTap'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class='body'>
+      <view class='makeContactDisplay'>
+        <view class='mcd-content'>
+          <view class='mcd-content-view1'>
+            <text>{{itemsText[0]}}</text>
+          </view>
+          <view class='mcd-divider'></view>
+          <view class='mcd-content-view2' bindtap='makeMapDisplay'>
+            <image src='{{logo[1]}}'></image>
+            <text>{{itemsText[1]}}</text>
+          </view>
+        </view>
+        <image src='{{logo[0]}}' bindtap='makePhoneCall'></image>
+      </view>
+    </view>
+  </view>
+
+  <view id='bottom'>
+    <!--4*1滚动新闻条/单条信息栏
+    <view class='scrollNews'>
+      <view class='bo-sc-column1'>
+        <view>
+          <text>产品报价</text>
+        </view>
+      </view>
+      <view class='bo-sc-column2'>
+        <view>
+          <text>今日扁钢15mm报价5555元/吨</text>
+        </view>
+      </view>
+    </view>
+    -->
+    <view class='tableView' id='tableViewTop'>
+      <view class='tag' id='tag1' bindtap='tag1'>
+        <image src='{{tagImg[0]}}'></image>
+        <text>{{tagText[0]}}</text>
+      </view>
+      <view class='tag' id='tag2' bindtap='tag2'>
+        <image src='{{tagImg[1]}}'></image>
+        <text>{{tagText[1]}}</text>
+      </view>
+      <view class='tag' id='tag3' bindtap='tag3'>
+        <image src='{{tagImg[2]}}'></image>
+        <text>{{tagText[2]}}</text>
+      </view>
+    </view>
+    <!--4*3新闻栏目-->
+    <view class='in-bo-news'>
+      <view class='in-ne-title'>
+        <view class="in-ti-left" id="{{activedIndex == 0 ? 'selected' : ''}}" data-index='0' 
+          bindtap='makeNewsContentChange'>{{indexNewsTitle[0]}}</view>
+        <view class='in-ti-news_divider'></view>
+        <view class="in-ti-left" id="{{activedIndex == 1 ? 'selected' : ''}}" data-index='1' 
+          bindtap='makeNewsContentChange'>{{indexNewsTitle[1]}}</view>
+      </view>
+      <swiper bindchange='makeNewsTabchange' current='{{activedIndex}}'>
+        <swiper-item>
+          <view class='in-ne-box'>
+            <block wx:for="{{indexNewsLeft}}">
+              <view class='in-bo-item_divider'></view>
+              <view class='in-bo-item' bindtap='makeNewsDetilDisplay' data-newsid='{{index}}'>
+                <text>{{item.newsTitle}}</text>
+                <text>{{item.newsDate}}</text>
+              </view>
+            </block>
+            <view class='in-bo-more'>更多资讯</view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class='in-ne-box'>
+            <block wx:for="{{indexNewsRight}}">
+              <view class='in-bo-item_divider'></view>
+              <view class='in-bo-item' bindtap='makeNewsDetilDisplay' data-newsid='{{index}}'>
+                <text>{{item.newsTitle}}</text>
+                <text>{{item.newsDate}}</text>
+              </view>
+            </block>
+            <view class='in-bo-more'>更多资讯</view>
+          </view>
+        </swiper-item>
+      </swiper>
+      <view class='in-co-footer'>
+        <text>LinkStorm物联科技 提供技术支持</text>
+        <text>Version 0.9.2 开发版</text>
+      </view>
+    </view>
+    <!--全局分享按钮-->
+    <import src='../public/shareTemplate/shareTemplate.wxml' />
+    <template is='buttom' />
+  </view>
+</view>

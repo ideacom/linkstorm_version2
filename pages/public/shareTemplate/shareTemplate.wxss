@@ -1,0 +1,34 @@
+/* pages/template/template.wxss */
+.share-btn-container{
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  top: 85%;
+  left: 82%;
+  z-index: 3;
+}
+ .sh-co-makeshare{
+    width:100rpx;
+    height:100rpx;
+    border-radius: 50rpx;
+    background: #25a1fa;
+    /*background: #2852BF;*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .sh-co-ms2{
+    white-space: nowrap;
+    text-align: center;
+    font-size: 26rpx;
+    color: #ffffff;
+  }
+  .sh-co-makeshare::after{
+    border: none;
+    padding: 0;
+  }
+    .sh-co-makeshare image{
+      width: 55rpx;
+      height: 55rpx;
+    }

@@ -1,0 +1,11 @@
+<!--pages/index/newsDetil/newsDetil.wxml-->
+<view class='news-container'>
+  <view class='ne-co-title'>
+    <text>{{newsTitle}}</text>
+    <text>{{newsDate}}</text>
+    <text>{{author}}</text>
+  </view>
+  <view class='ne-co-content'>
+    <text>{{newsContent}}</text>
+  </view>
+</view>

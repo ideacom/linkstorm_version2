@@ -1,0 +1,38 @@
+/* pages/index/newsDetil/newsDetil.wxss */
+page{
+  height: 100%;
+}
+.news-container{
+  width: 94%;
+  padding: 0 3%;
+}
+  .ne-co-title{
+    width: 100%;
+    height: 170rpx;
+    border-bottom: 1rpx solid rgba(0,0,0,0.1);
+    margin-bottom: 3%;
+  }
+    .ne-co-title text{
+      font-size: 28rpx;
+      color: #ECECEC;
+      display: block;
+    }
+      .ne-co-title text:first-child{
+        font-size: 42rpx;
+        color: #000;
+      }
+      .ne-co-title > text + text{
+        font-size: 28rpx;
+        color: #ECECEC;
+        margin-top: 1%;
+      }
+      .ne-co-title text:last-child{
+        font-size: 28rpx;
+        color: #ECECEC; 
+      }
+  .ne-co-content{
+    width: 100%;
+  }
+    .ne-co-content text{
+      font-size: 28rpx;
+    }
